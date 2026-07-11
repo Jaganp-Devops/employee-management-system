@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Employee Management System</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">
+      <img src="images/logo.png" alt="Logo" onerror="this.style.display='none'">
+      <span>EMS</span>
+    </div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="employees.html">Employees</a>
+      <span id="current-user"></span>
+      <a href="#" id="logout-btn">Logout</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2 style="margin-bottom:22px; color:#4338ca;">Dashboard</h2>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="value" id="stat-total">-</div>
+        <div class="label">Total Employees</div>
+      </div>
+      <div class="stat-card">
+        <div class="value" id="stat-active">-</div>
+        <div class="label">Active Employees</div>
+      </div>
+      <div class="stat-card">
+        <div class="value" id="stat-departments">-</div>
+        <div class="label">Departments</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-bottom:14px; color:#4338ca;">Employees by Department</h3>
+      <ul id="dept-breakdown"></ul>
+    </div>
+
+    <a href="employees.html" class="btn">Manage Employees</a>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

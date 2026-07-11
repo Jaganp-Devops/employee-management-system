@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employees - Employee Management System</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="employees-list">
+  <header class="navbar">
+    <div class="brand">
+      <img src="images/logo.png" alt="Logo" onerror="this.style.display='none'">
+      <span>EMS</span>
+    </div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="employees.html">Employees</a>
+      <a href="#" id="logout-btn">Logout</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="toolbar">
+      <h2>Employees</h2>
+      <a href="add-employee.html" class="btn">+ Add Employee</a>
+    </div>
+
+    <div class="toolbar">
+      <input type="text" id="search-input" placeholder="Search by name or email...">
+      <select id="department-filter">
+        <option value="">All Departments</option>
+        <option value="Engineering">Engineering</option>
+        <option value="Human Resources">Human Resources</option>
+        <option value="Sales">Sales</option>
+        <option value="Finance">Finance</option>
+        <option value="Marketing">Marketing</option>
+      </select>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Department</th>
+          <th>Position</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="employee-table-body">
+        <tr><td colspan="7">Loading...</td></tr>
+      </tbody>
+    </table>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/employee.js"></script>
+</body>
+</html>

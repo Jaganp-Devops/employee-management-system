@@ -1,0 +1,29 @@
+# Node
+node_modules/
+
+# Environment
+.env
+.env.*
+
+# Logs
+logs/
+*.log
+
+# AWS
+.aws/
+
+# Uploads
+uploads/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Terraform (later)
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+
+# IDE
+.vscode/
+.idea/
