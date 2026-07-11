@@ -11,6 +11,63 @@
 
 </p>
 
+# 📂 Project Structure
+
+```text
+employee-management-system/
+│
+├── 📂 backend/
+│   ├── 📂 config/
+│   ├── 📂 controllers/
+│   ├── 📂 middleware/
+│   ├── 📂 models/
+│   ├── 📂 routes/
+│   ├── 📂 uploads/
+│   ├── app.js
+│   ├── server.js
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── Dockerfile
+│   └── .env.example
+│
+├── 📂 frontend/
+│   ├── 📂 css/
+│   ├── 📂 js/
+│   ├── 📂 images/
+│   ├── index.html
+│   ├── login.html
+│   ├── dashboard.html
+│   ├── employees.html
+│   ├── add-employee.html
+│   ├── edit-employee.html
+│   ├── Dockerfile
+│   └── docker-compose.yaml
+│
+├── 📂 database/
+│   ├── schema.sql
+│   ├── sample-data.sql
+│   └── README.md
+│
+├── 📂 docs/
+│   ├── 01-Networking.md
+│   ├── 02-Compute-Database.md
+│   ├── 03-Docker-ECR.md
+│   ├── 04-LoadBalancer-ASG.md
+│   └── 05-Monitoring-Security.md
+│
+├── 📂 screenshots/
+│   ├── 📂 architecture/
+│   ├── 📂 aws/
+│   ├── 📂 application/
+│   ├── 📂 docker/
+│   └── 📂 monitoring/
+│
+├── 📄 README.md
+├── 📄 CONTRIBUTING.md
+├── 📄 LICENSE
+├── 📄 .gitignore
+└── 📄 .env.example
+```
 ---
 
 # 📖 Project Overview
