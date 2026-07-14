@@ -1,6 +1,6 @@
 // Central API helper - update API_BASE_URL to your backend's
 // ALB DNS name / domain once deployed on AWS.
-const API_BASE_URL = "http://ems-alb-405584804.ap-south-1.elb.amazonaws.com/api";
+const API_BASE_URL = "your ALB url";
 
 function getToken() {
   return localStorage.getItem('token');
